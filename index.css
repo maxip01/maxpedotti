@@ -75,23 +75,36 @@ font-family: 'Playfair Display', serif;*/
 
 /*seccion one carrusel start*/
 .carrusel-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-auto-rows: 200px;
-    gap: 10px;
-    background-color: hsla(36, 94%, 25%, 0.61);
-    margin: 5px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
 }
+.itemjar li {
+    list-style: none;
+    width: 100%;
+}
+  
 .imageni1{
     width:100%;
-    height:100%;
-    object-fit: cover;
+}
+.itemjar{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: itemjar 20s linear infinite;
+}
+@keyframes itemjar {
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+
+    35%{margin-left: -100%;}
+    55%{margin-left: -100%;}
+
+    60%{margin-left:-200%;}
+    100%{margin-left: -200%;}
 }
 
-.itemjar{
-    grid-row-start: span 2;
-}
-    /*seccion one end*/
+  /*seccion one end*/
     /*seccion two start*/
 .article-container{
     width: 100%;
